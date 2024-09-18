@@ -57,7 +57,7 @@ header .container{
 }
 .menu_item a {
     font-size: 16px;
-    line-height: 140px;
+    line-height: 130%;
     text-decoration: none;
     cursor: pointer;
     color: white;
