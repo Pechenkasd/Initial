@@ -108,6 +108,7 @@ header .container{
     right: 0;
     z-index: -1;
 }
+<<<<<<< HEAD
 .products{
     padding: 100px 0 ;
     position: relative;
@@ -281,3 +282,5 @@ header .container{
     top: -920px;
     left: 0;
 }
+=======
+>>>>>>> 85f54165730038970096925c75593f7910e81b07
