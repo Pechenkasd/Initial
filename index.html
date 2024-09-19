@@ -8,7 +8,7 @@
 </head>
 <body>
     <main class="main">
-
+    <div class="currency" title="Изменить валюту" id="change_currency">$</div>
     <header class="header">
         <div class="container">
             <img src="images/line1.png" alt="line1" class="line1">
@@ -18,13 +18,13 @@
             <nav class="menu">
                 <ul class="menu_list">
                     <li class="menu_item">
-                        <a href="#">Каталог</a>
+                        <a data-link="products">Каталог</a>
                     </li>
                     <li class="menu_item">
-                        <a href="#">О нас</a>
+                        <a data-link="love">О нас</a>
                     </li>
                     <li class="menu_item">
-                        <a href="#">Оформление заказа</a>
+                        <a data-link="order">Оформление заказа</a>
                     </li>
                 </ul>
             </nav>
@@ -38,13 +38,13 @@
                     Наши рецепты вдыхают жизнь в изысканность ингредиентов: ароматное натуральное масло, свежие сливки, чистый мёд и отборная мука. Мы тщательно отбираем каждый компонент премиального печенья, стремясь подарить вам истинное кулинарное наслаждение.
                 </p>
                 <div class="main_action">
-                    <button class="button">Заказать</button>
+                    <button class="button" id="main_action_button">Заказать</button>
                 </div>
             </div>
             <img src="images/cookie.png" alt="Cookei" class="main_image">
         </div>
     </section>
-    <section class="products"> 
+    <section class="products" id="products"> 
         <div class="container">
             <img src="images/line2.png" alt="line2" class="line2">
             <div class="common_title">Выберите печенье</div>
@@ -60,7 +60,7 @@
                         с достаточно толстой и липкой серединкой.</div>
                         <div class="product_item_extra">
                             <div class="product_item_info">
-                                <div class="product_item_price">20 $</div>
+                                <div class="product_item_price" data-base-price="20">20 $</div>
                                 <div class="product_item_weight">2 шт./ 200 гр.</div>
                             </div>
                             <button class="button violet_button">Заказать</button>
@@ -79,7 +79,7 @@
                         </div>
                         <div class="product_item_extra">
                             <div class="product_item_info">
-                                <div class="product_item_price">24 $</div>
+                                <div class="product_item_price" data-base-price="24">24 $</div>
                                 <div class="product_item_weight">2 шт./ 200 гр.</div>
                             </div>
                                 <button class="button violet_button">Заказать</button>
@@ -98,7 +98,7 @@
                             </div>
                         <div class="product_item_extra">
                             <div class="product_item_info">
-                                <div class="product_item_price">18 $</div>
+                                <div class="product_item_price" data-base-price="18">18 $</div>
                                 <div class="product_item_weight">2 шт./ 200 гр.</div>
                             </div>
                                 <button class="button violet_button">Заказать</button>
@@ -116,7 +116,7 @@
                             стружкой, придающей богатую глубину вкуса.</div>
                         <div class="product_item_extra">
                             <div class="product_item_info">
-                                <div class="product_item_price">24 $</div>
+                                <div class="product_item_price" data-base-price="24">24 $</div>
                                 <div class="product_item_weight">2 шт./ 200 гр.</div>
                             </div>
                                 <button class="button violet_button">Заказать</button>
@@ -133,7 +133,7 @@
                             Сладкое, пикантное и идеально сбалансированное печенье удовлетворяет тягу любителей арахисового масла и шоколада.</div>
                         <div class="product_item_extra">
                             <div class="product_item_info">
-                                <div class="product_item_price">20 $</div>
+                                <div class="product_item_price" data-base-price="20">20 $</div>
                                 <div class="product_item_weight">2 шт./ 200 гр.</div>
                             </div>
                                 <button class="button violet_button">Заказать</button>
@@ -151,7 +151,7 @@
                         Каждое печенье хрустит снаружи, но раскрывает внутри нежную сердцевину.</div>
                         <div class="product_item_extra">
                             <div class="product_item_info">
-                                <div class="product_item_price">18 $</div>
+                                <div class="product_item_price"data-base-price="18">18 $</div>
                                 <div class="product_item_weight">2 шт./ 200 гр.</div>
                             </div>
                                 <button class="button violet_button">Заказать</button>
@@ -169,7 +169,7 @@
                             четырёх оригинальных вкусов печенья.</div>
                         <div class="product_item_extra">
                             <div class="product_item_info">
-                                <div class="product_item_price">36 $</div>
+                                <div class="product_item_price" data-base-price="36">36 $</div>
                                 <div class="product_item_weight">4 шт./ 400 гр.</div>
                             </div>
                                 <button class="button violet_button">Заказать</button>
@@ -187,7 +187,7 @@
                             лакомство жевательное, лимонное, не слишком сладкое и даже немного… освежающее?</div>
                         <div class="product_item_extra">
                             <div class="product_item_info">
-                                <div class="product_item_price">33 $</div>
+                                <div class="product_item_price" data-base-price="33">33 $</div>
                                 <div class="product_item_weight">4 шт./ 400 гр.</div>
                             </div>
                                 <button class="button violet_button">Заказать</button>
@@ -204,7 +204,7 @@
                             Вам больше не нужно выбирать фаворитов. Мы сделали этот набор для всех людей, которые действительно любят шоколад…</div>
                         <div class="product_item_extra">
                             <div class="product_item_info">
-                                <div class="product_item_price">38 $</div>
+                                <div class="product_item_price" data-base-price="38">38 $</div>
                                 <div class="product_item_weight">4 шт./ 400 гр.</div>
                             </div>
                                 <button class="button violet_button">Заказать</button>
@@ -222,7 +222,7 @@
                             Наслаждение круглый год.</div>
                         <div class="product_item_extra">
                             <div class="product_item_info">
-                                <div class="product_item_price">33 $</div>
+                                <div class="product_item_price" data-base-price="33">33 $</div>
                                 <div class="product_item_weight">4 шт./ 400 гр.</div>
                             </div>
                                 <button class="button violet_button">Заказать</button>
@@ -240,7 +240,7 @@
                             стружку.</div>
                         <div class="product_item_extra">
                             <div class="product_item_info">
-                                <div class="product_item_price">39 $</div>
+                                <div class="product_item_price" data-base-price="39">39 $</div>
                                 <div class="product_item_weight">4 шт./ 400 гр.</div>
                             </div>
                                 <button class="button violet_button">Заказать</button>
@@ -258,7 +258,7 @@
                             обещает неповторимые гастрономические ощущения. Каждый кусочек обладает хрустящей корочкой и тает во рту.</div>
                         <div class="product_item_extra">
                             <div class="product_item_info">
-                                <div class="product_item_price">35 $</div>
+                                <div class="product_item_price" data-base-price="35">35 $</div>
                                 <div class="product_item_weight">4 шт./ 400 гр.</div>
                             </div>
                                 <button class="button violet_button">Заказать</button>
@@ -268,7 +268,7 @@
             </div>
         </div>
     </section >
-    <section class="love">
+    <section class="love" id="love">
         <div class="container">
             <div class="common_title">
                 Пекарня с любовью
@@ -290,7 +290,7 @@
             </div>
         </div>
     </section>
-    <section class="order">
+    <section class="order" id="order">
         <img src="images/line3.png" alt="line3" class="line3">
         <div class="container">
             <div class="common_title">
@@ -304,10 +304,10 @@
                         наслаждений.
                     </div>
                     <div class="order_form_inputs" >
-                        <input type="text"placeholder="Выберите печенье">
-                        <input type="text"placeholder="Ваше имя">
-                        <input type="text"placeholder="Ваш телефон">
-                        <button class="button violet_button">Оформить заказ</button>
+                        <input type="text"placeholder="Выберите печенье" id="product">
+                        <input type="text"placeholder="Ваше имя" id="name">
+                        <input type="text"placeholder="Ваш телефон" id="phone">
+                        <button class="button violet_button" id="order_action">Оформить заказ</button>
                     </div>
                 </div>
                 <div class="order_block_image">
@@ -325,5 +325,6 @@
         </div>
     </footer>
     </main>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
