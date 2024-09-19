@@ -150,7 +150,6 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 24px;
 }
 .product_item_price{
     font-family: 'Steppe-ExtraBold', sans-serif;
@@ -199,7 +198,7 @@ header .container{
 }
 .order_block{
     margin-top: 103px;
-    background-color: rgb(255, 255, 255 / 30%);
+    background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(50px);
     display: flex;
 }
